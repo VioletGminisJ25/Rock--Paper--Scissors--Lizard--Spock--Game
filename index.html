@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="./js/index.js"></script>
+	<title>Rock, Paper, Scissors, Lizard, Spock!</title>
+</head>
+
+<body>
+	<section id="intro"><!--This section is the intro page-->
+		<h1>Welcome to the game</h1>
+		<h1>ROCK, PAPER, SCISSORS, LIZARD, SPOCK!</h1>
+		<div id="enter">
+			<p onclick="start()">Click to start</p>
+		</div>
+	</section>
+
+	<!--(Fade transition)-->
+	<header id="header" class="hidden">
+		<h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+	</header>
+	<main id="game" class="hidden"><!--This is the real page of the game-->
+		<section>
+			<h2>Welcome to the game</h2>
+			<h2>Select an option to start!</h2>
+		</section>
+		<section>
+			<article>
+				<h3>Player</h3>
+				<div></div>
+				<h3>VS</h3>
+				<h3>CPU</h3>
+				<div></div>
+			</article>
+			<article id="Select">
+				<span></span>
+				<div></div>
+				<span></span>
+			</article>
+		</section>
+		<section id="rules">
+			<div></div>
+			<div id="rules_hidden" class="hidden"></div><!--Normas explicadas, mostrado en grande-->
+		</section>
+	</main>
+</body>
+
+</html>

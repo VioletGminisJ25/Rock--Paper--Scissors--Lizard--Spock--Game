@@ -1,0 +1,137 @@
+:root {
+	--spring-green-50: #eefff5;
+	--spring-green-100: #d7ffea;
+	--spring-green-200: #b2ffd6;
+	--spring-green-300: #52ffa5;
+	--spring-green-400: #33f591;
+	--spring-green-500: #09de70;
+	--spring-green-600: #01b85a;
+	--spring-green-700: #059049;
+	--spring-green-800: #0a713d;
+	--spring-green-900: #0a5d35;
+	--spring-green-950: #00341b;
+}
+
+* {
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom left, var(--spring-green-300), var(--spring-green-950));
+}
+
+.hidden {
+	display: none !important;
+}
+.hiddenintro{
+	animation: hiddend 2s forwards !important;
+}
+.mostrar{
+	display: block;
+}
+
+#intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	text-shadow: 5px 5px var(--spring-green-900);
+}
+
+#intro h1:nth-child(1) {
+	max-width: 600px;
+	overflow: hidden;
+	border-right: .15em solid var(--spring-green-900);
+	border-radius: 5px;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation:
+		typing 3.5s steps(40, end) 0.2s alternate backwards infinite,
+		blink-caret .75s step-end infinite;
+}
+#intro h1:nth-child(2) {
+	max-width: 1270px;
+	overflow: hidden;
+	border-right: .15em solid var(--spring-green-900);
+	border-radius: 5px;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation:
+		typing 3.5s steps(40, end) 3.5s alternate backwards infinite,
+		blink-caret .75s step-end infinite;
+}
+#enter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+}
+#enter p{
+	color: white;
+	text-shadow: 0 0;
+	animation: bounce .5s infinite alternate ;
+}
+#enter a{
+	text-decoration: none;
+	color: white;
+}
+
+@keyframes bounce{
+	from{
+		transform: 0;
+	}
+	to{
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes blink-caret {
+
+	from,
+	to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color:  var(--spring-green-900);
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
+}
+
+@keyframes hiddend{
+	from{
+		opacity: 1;
+		scale: 1;
+	}
+	to{
+		scale: .75;
+		opacity: 0;
+		display: none;
+	}
+}

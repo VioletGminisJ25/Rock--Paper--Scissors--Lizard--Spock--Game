@@ -12,3 +12,8 @@ The caracteristics does it have are simplicity, beauty and functionality.
 ## Brainstorm
 
 ![brainstorm](./brainstorm.png)
+
+## Resources
+
+[CoolContrast](https://coolcontrast.vercel.app/)
+[UIColorsApp](https://uicolors.app/)
