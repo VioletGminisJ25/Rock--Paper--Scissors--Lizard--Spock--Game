@@ -1,6 +1,8 @@
 # Rock, Paper, Scissors, Lizard, Spock
 
 This is a proyect to practice everithing learned in class.
+
+
 The proyect consist of developing the rock, paper, scissors, lizard, spock game with HTML, CSS and JAVASCRIPT.
 
 ## What characteristics does it present?
