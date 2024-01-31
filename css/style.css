@@ -15,28 +15,34 @@
 * {
 	box-sizing: border-box;
 }
-html{
+
+html {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
+
 body {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
+	background-size: 400%;
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to bottom left, var(--spring-green-300), var(--spring-green-950));
+	background-image: linear-gradient(to top right, var(--spring-green-950), var(--spring-green-300));
+	animation: fondo 3s ease-in-out both infinite alternate;
 }
 
 .hidden {
 	display: none !important;
 }
-.hiddenintro{
+
+.hiddenintro {
 	animation: hiddend 2s forwards !important;
 }
-.mostrar{
+
+.mostrar {
 	display: block;
 }
 
@@ -65,6 +71,7 @@ body {
 		typing 3.5s steps(40, end) 0.2s alternate backwards infinite,
 		blink-caret .75s step-end infinite;
 }
+
 #intro h1:nth-child(2) {
 	max-width: 1270px;
 	overflow: hidden;
@@ -77,27 +84,61 @@ body {
 		typing 3.5s steps(40, end) 3.5s alternate backwards infinite,
 		blink-caret .75s step-end infinite;
 }
-#enter{
+
+#enter {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 70px;
 }
-#enter p{
+
+#enter p {
 	color: white;
 	text-shadow: 0 0;
-	animation: bounce .5s infinite alternate ;
+	animation: bounce .5s infinite alternate;
 }
-#enter a{
+
+#enter a {
 	text-decoration: none;
 	color: white;
 }
 
-@keyframes bounce{
-	from{
+#header {
+	width: 100%;
+	background: white;
+	border-radius: 0 0 50px 50px;
+	height: 8%;
+	box-shadow: 0px 5px 30px var(--spring-green-800);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header h1 {
+	margin: 0;
+	text-shadow: 5px 5px 5px var(--spring-green-600);
+	font-size: 2.3em;
+}
+
+#game{
+	height: 84%;
+	width: 100%;
+}
+#game section{
+	height: 30%;
+	width: 100%;
+}
+footer{
+	height: 8%;
+}
+/*#TODO cambiar el header de verde a un gris por ejemplo y estructurar la web*/
+
+@keyframes bounce {
+	from {
 		transform: 0;
 	}
-	to{
+
+	to {
 		transform: translateY(-10px);
 	}
 }
@@ -110,7 +151,7 @@ body {
 	}
 
 	50% {
-		border-color:  var(--spring-green-900);
+		border-color: var(--spring-green-900);
 	}
 }
 
@@ -124,14 +165,25 @@ body {
 	}
 }
 
-@keyframes hiddend{
-	from{
+@keyframes hiddend {
+	from {
 		opacity: 1;
 		scale: 1;
 	}
-	to{
+
+	to {
 		scale: .75;
 		opacity: 0;
 		display: none;
+	}
+}
+
+@keyframes fondo {
+	from {
+		background-position: bottom left;
+	}
+
+	to {
+		background-position:top right;
 	}
 }
