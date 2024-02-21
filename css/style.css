@@ -14,6 +14,8 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -60,7 +62,7 @@ body {
 }
 
 #intro h1:nth-child(1) {
-	max-width: 600px;
+	max-width: 665px;
 	overflow: hidden;
 	border-right: .15em solid var(--spring-green-900);
 	border-radius: 5px;
@@ -108,7 +110,7 @@ body {
 	background: white;
 	border-radius: 0 0 50px 50px;
 	height: 8%;
-	box-shadow: 0px 5px 30px var(--spring-green-800);
+	box-shadow: 0px 15px 30px var(--spring-green-600);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -116,22 +118,51 @@ body {
 
 #header h1 {
 	margin: 0;
-	text-shadow: 5px 5px 5px var(--spring-green-600);
+	text-shadow: 5px 5px 5px grey;
 	font-size: 2.3em;
 }
 
 #game{
 	height: 84%;
 	width: 100%;
+	position: relative;
 }
 #game section{
-	height: 30%;
 	width: 100%;
 }
 footer{
 	height: 8%;
 }
 /*#TODO cambiar el header de verde a un gris por ejemplo y estructurar la web*/
+main{
+	width: 100%;
+	height: 16%;
+}
+main section article{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	gap: 200px;
+}
+#gameimg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+#start{
+	height: 15% ;
+	text-align: center;
+	padding-top: 20px;
+	color: rgb(237, 237, 237);
+	text-shadow:5px 2px rgb(143, 143, 143);
+	font-size: 20px;
+}
+
 
 @keyframes bounce {
 	from {

@@ -17,23 +17,28 @@
 			<p onclick="start()">Click to start</p>
 		</div>
 	</section>
-
+	<!--#TODO favicon!-->
 	<!--(Fade transition)-->
 	<header id="header" class="hidden">
 		<h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
 	</header>
 	<main id="game" class="hidden"><!--This is the real page of the game-->
-		<section>
+		<section id="start">
 			<h2>Welcome to the game</h2>
 			<h2>Select an option to start!</h2>
 		</section>
-		<section>
-			<article>
-				<h3>Player</h3>
-				<div></div>
-				<h3>VS</h3>
-				<h3>CPU</h3>
-				<div></div>
+		<section id="gameimg">
+			<article >
+				<div>
+					<h3>player</h3>
+					<h3>CPU</h3>
+				</div>
+				<div>
+					<div id="player">
+					</div>
+					<div id="CPU"></div>
+
+				</div>
 			</article>
 			<article id="Select">
 				<span></span>
@@ -46,7 +51,7 @@
 			<div id="rules_hidden" class="hidden"></div><!--Normas explicadas, mostrado en grande-->
 		</section>
 	</main>
-	<footer></footer>
+	<footer id="footer" class="hidden"></footer>
 </body>
 
 </html>
