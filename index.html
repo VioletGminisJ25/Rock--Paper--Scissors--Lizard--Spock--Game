@@ -28,30 +28,36 @@
 			<h2>Select an option to start!</h2>
 		</section>
 		<section id="gameimg">
-			<article >
-				<div>
-					<h3>player</h3>
-					<h3>CPU</h3>
+			<article>
+				<div id="playerstag">
+					<h2>PLAYER</h2>
+					<h2>CPU</h2>
 				</div>
-				<div>
-					<div id="player">
-					</div>
+				<div id="playersimg">
+					<div id="player"></div>
 					<div id="CPU"></div>
-
 				</div>
 			</article>
 			<article id="Select">
-				<span></span>
-				<div></div>
-				<span></span>
+				<ul id="selector">
+					<li><button class="play">Rock</button></li>
+					<li><button class="play">Lizard</button></li>
+					<li><button class="play">Spock</button></li>
+					<li><button class="play">Paper</button></li>
+					<li><button class="play">Scissors</button></li>
+				</ul>
 			</article>
 		</section>
 		<section id="rules">
-			<div></div>
-			<div id="rules_hidden" class="hidden"></div><!--Normas explicadas, mostrado en grande-->
+			<div id="rulesimg"></div>
 		</section>
+		<div id="rules_hidden" class="hidden">
+			<h2>---- RULES ---</h2>
+			<p>The scissors cut the paper, the paper wraps around the rock, the rock crushes the lizard, the lizard poisons Spock, Spock crushes the scissors, the scissors decapitates the lizard, the lizard devours the paper, the paper disapproves of Spock, Spock disintegrates the stone and, as always, the stone crushes the scissors.</p>
+			<button id="exit">Exit</button>
+		</div>
 	</main>
-	<footer id="footer" class="hidden"></footer>
+	<footer id="footer" class="hidden" ></footer>
 </body>
 
 </html>

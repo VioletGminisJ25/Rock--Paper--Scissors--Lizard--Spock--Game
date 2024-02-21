@@ -122,46 +122,156 @@ body {
 	font-size: 2.3em;
 }
 
-#game{
+#game {
 	height: 84%;
 	width: 100%;
 	position: relative;
 }
-#game section{
+
+#game section {
 	width: 100%;
 }
-footer{
+
+footer {
 	height: 8%;
+	;
 }
+
 /*#TODO cambiar el header de verde a un gris por ejemplo y estructurar la web*/
-main{
+main {
 	width: 100%;
 	height: 16%;
 }
-main section article{
+
+main section article {
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 	justify-content: center;
 	gap: 200px;
 }
-#gameimg{
+
+#gameimg {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+#gameimg article {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+#gameimg article div {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	gap: 340px;
+}
+
+#playersimg {
+	gap: 100px !important;
+}
+
+#playersimg div {
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.742);
+	border-radius: 20px;
+	/* background-image: url(../src/piedra.avif); */
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 
 
 
-#start{
-	height: 15% ;
+#start {
+	height: 15%;
 	text-align: center;
 	padding-top: 20px;
 	color: rgb(237, 237, 237);
-	text-shadow:5px 2px rgb(143, 143, 143);
+	text-shadow: 5px 2px rgb(143, 143, 143);
 	font-size: 20px;
 }
+
+
+/*--------------------------------------*/
+ul {
+	list-style: none;
+}
+
+#selector {
+	margin: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+
+/*--------------------------------------*/
+
+
+#rules {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#rulesimg{
+	width: 230px;
+	height: 230px;
+	background-image: url(../src/rules.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	backdrop-filter: blur(30px);
+	border-radius: 20px;
+}
+
+#rules_hidden{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	width: 100%;
+	height: 110%;
+	backdrop-filter: blur(15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* animation: all 0.5s; */
+}
+#rules_hidden p{
+	width: 60%;
+	margin: 40px;
+	text-align: justify;
+	font-size: 25px;
+}
+#rules_hidden h2{
+	font-size: 30px;
+}
+
+button{
+	appearance: none;
+	padding: 5px 15px;
+	border-radius: 10px;
+	border: 0;
+	font-size: 20px;
+	transition: all .7s ;
+}
+button:active{
+	background-color:var(--spring-green-500);
+	transition: all .07s ;
+}
+
+
+
 
 
 @keyframes bounce {
@@ -215,6 +325,6 @@ main section article{
 	}
 
 	to {
-		background-position:top right;
+		background-position: top right;
 	}
 }
